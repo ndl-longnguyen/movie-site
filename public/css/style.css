@@ -1,0 +1,356 @@
+
+.nav a {
+    font-weight: 20px;
+    text-decoration: none;
+}
+
+.nav>li {
+    list-style: none;
+    width: 100%;
+    height: 100px;
+}
+
+.alert {
+    position: fixed;
+    z-index: 1000;
+    right: 0px;
+    animation: mymove 3s infinite;
+    animation-delay: 3s;
+}
+
+@keyframes mymove {
+    from {
+        right: 0px;
+    }
+
+    to {
+        right: -50%;
+    }
+}
+
+.hide-msg {
+    display: none !important;
+}
+
+.show-msg {
+    display: block !important;
+}
+
+/* Made with love by Mutiullah Samim*/
+
+@import url('https://fonts.googleapis.com/css?family=Numans');
+
+.sign-in-up {
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}
+
+
+.sign-in-up .container {
+    height: 100%;
+    align-content: center;
+}
+
+.sign-in-up .card {
+    height: 370px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.sign-in-up .social_icon span {
+    font-size: 60px;
+    margin-left: 10px;
+    color: #FFC312;
+}
+
+.sign-in-up .social_icon span:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.sign-in-up .card-header h3 {
+    color: white;
+}
+
+.sign-in-up .social_icon {
+    position: absolute;
+    right: 20px;
+    top: -45px;
+}
+
+.sign-in-up .input-group-prepend span {
+    width: 50px;
+    background-color: #FFC312;
+    color: black;
+    border: 0 !important;
+}
+
+.sign-in-up input:focus {
+    outline: 0 0 0 0 !important;
+    box-shadow: 0 0 0 0 !important;
+
+}
+
+.sign-in-up .remember {
+    color: white;
+}
+
+.sign-in-up .remember input {
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.sign-in-up .login_btn {
+    color: black;
+    background-color: #FFC312;
+    width: 100px;
+}
+
+.sign-in-up .login_btn:hover {
+    color: black;
+    background-color: white;
+}
+
+.sign-in-up .links {
+    color: white;
+}
+
+.sign-in-up .links a {
+    margin-left: 4px;
+}
+
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    line-height: 1;
+    z-index: 5;
+    transition: all 0.2s linear;
+    background-color: rgb(0 255 255 / 32%);
+}
+
+.slick-arrow:hover {
+    background-color: #2cccff;
+    color: white;
+}
+
+.slick-prev {
+    left: -25px;
+}
+
+.slick-next {
+    right: -25px;
+}
+
+.slick-dots {
+    position: absolute;
+    padding: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0 20px;
+    list-style: none;
+}
+
+#trending .slick-dots button {
+    display: none;
+
+}
+
+#new .slick-dots button {
+    display: none;
+}
+
+#trending .slick-track {
+    top: 10px !important;
+
+}
+
+#new .slick-track {
+    top: 10px !important;
+}
+
+.slick-dots button {
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 100rem;
+    background-color: #eee;
+    border: none;
+    outline: none;
+    transition: all 0.2s linear;
+}
+
+.slick-dots .slick-active button {
+    background-color: #2cccff;
+}
+
+.container-movie {
+    max-width: 1370px;
+    margin: 70px auto 50px;
+}
+
+.zoom {
+    height: 320px;
+    border-radius: 10px;
+}
+
+img.zoom {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+}
+
+.movie-menu {
+    margin-right: -1rem;
+    margin-top: 50px;
+}
+
+.movie-list {
+    width: calc(25% - 1rem);
+}
+
+.movie-list img {
+    height: 250px;
+    object-fit: cover
+}
+
+.movie-hot {
+    position: absolute;
+    top: 11px;
+    right: 4px;
+    color: #ffff;
+    transform: translate(30%, -50%);
+    background-color: red;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 16%;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+  @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+
+.heading-movie {
+    margin-bottom: -20px;
+    font-size: 30px ;
+    border-bottom: 2px solid #ccc;
+
+}
+
+.view-movie {
+    min-height: 500px;
+    margin-top: 65px;
+}
+
+
+/* PLAY MOVIE */
+.container-movie-play {
+    position: relative;
+    background: #000;
+}
+
+.container-movie-play img {
+    width: 100%;
+    overflow: hidden;
+    min-height: 400px;
+    opacity: 0.4;
+}
+
+.movie-play {
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    height: 80%;
+    background: #212529;
+}
+
+.movie-content {
+    position: absolute;
+    top: -70px;
+    left: 200px;
+    background-color: #000;
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.movie-content img {
+    width: 300px;
+    height: 300px !important;
+    border-radius: 10px;
+    object-fit: cover;
+    opacity: 0.9;
+}
+
+.movie-detail {
+    position: absolute;
+    left: 520px;
+    top: 20px;
+    color: #fff;
+    text-align: justify;
+    margin-right: 200px;
+    font-size: 14px;
+}
+
+.movie-name {
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.btn-play-movie {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 520px;
+    top: -50px;
+    width: auto;
+    padding: 8px 12px;
+    border: none;
+    background: #2687d6;
+    box-shadow: inset 1px 1px 1px 1px #2687d6, inset -1px -1px 1px 1px #2687d6;
+    border-radius: 5px;
+}
+
+.show-search {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.search-item {
+
+}
+
+.search-item:hover {
+    background-color: #ccc;
+}
+
+.search-item img{
+    object-fit: cover;
+}

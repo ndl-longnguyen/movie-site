@@ -108,6 +108,10 @@ class UserService
      */
     public function deleteUser($id)
     {
-        return User::where('id', $id)->delete();
+        $user = User::find($id);
+        if ($user) {
+            $user->comments()->delete();
+        }
+        return $user->delete();
     }
 }

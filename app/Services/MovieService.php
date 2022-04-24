@@ -135,7 +135,11 @@ class MovieService
      */
     public function deleteMovie($id)
     {
-        return Movie::where('id', $id)->delete();
+        $movie = Movie::find($id);
+        if ($movie) {
+            $movie->comments()->delete();
+        }
+        return  $movie->delete();
     }
 
     /**

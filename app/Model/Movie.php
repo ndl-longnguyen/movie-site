@@ -14,4 +14,12 @@ class Movie extends Model
     protected $fillable = [
         'title', 'director', 'performer', 'category', 'premiere', 'time', 'image', 'view', 'video'
     ];
+
+    /**
+     * Get the comments for the Movie.
+     */
+    public function comments()
+    {
+        return $this->hasMany('App\Model\Comment');
+    }
 }

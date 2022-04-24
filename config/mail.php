@@ -49,7 +49,7 @@ return [
 
         'sendmail' => [
             'transport' => 'sendmail',
-            'path' => '/usr/sbin/sendmail -bs',
+            'path' => env('MAIL_SENDMAIL', '/usr/sbin/sendmail -bs')
         ],
 
         'log' => [
@@ -77,7 +77,6 @@ return [
         'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
         'name' => env('MAIL_FROM_NAME', 'Example'),
     ],
-
     /*
     |--------------------------------------------------------------------------
     | Markdown Mail Settings

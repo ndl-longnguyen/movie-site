@@ -21,4 +21,20 @@ class Comment extends Model
      * @var array
      */
     protected $attributes = [];
+
+    /**
+     * Get the User that owns the comment.
+     */
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
+
+    /**
+     * Get the Movie that owns the comment.
+     */
+    public function movie()
+    {
+        return $this->belongsTo('App\Post');
+    }
 }

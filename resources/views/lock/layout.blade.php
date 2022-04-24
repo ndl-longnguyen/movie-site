@@ -27,8 +27,8 @@
             if (data.message[0].view != undefined && data.message[0].id == $('#id').val()) {
                 $('#show-views').html(data.message[0].view)
             } else
-            // if (data.message[1] != undefined && data.message[0] != undefined && data.message[2] == $('#id').val()) {
-            {
+            if (data.message[1] != undefined && data.message[0] != undefined && data.message[2] == $('#id')
+                .val()) {
                 let comment = "<div class = \"d-flex text-light\"> <p class=\"mr-1 text-secondary\">" +
                     data.message[3] + "</p><strong>" + data.message[1] +
                     " </strong><p class=\"ml-1 \">" + data.message[0] + "</p></div>";

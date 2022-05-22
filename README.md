@@ -36,10 +36,10 @@
 
 ## Requirements
 
--   Cache config
-    <pre>$ php artisan config:cache </pre>
 -   Create APP_KEY
     <pre>$ php artisan key:generate </pre>
+-   Cache config
+    <pre>$ php artisan config:cache </pre>
 -   Make database
     <pre>$ php artisan migrate </pre>
 -   Create acount Admin (email: admin@gmail.com - password: admin)
